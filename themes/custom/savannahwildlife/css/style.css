@@ -294,7 +294,11 @@ ul.tips {
 }
 #logo {
   float: left; /* LTR */
-  padding: 15px 15px 15px 10px; /* LTR */
+  padding: 0px; /* LTR */
+  background: none repeat scroll 0 0 green;
+  height: 53px;
+  width: 284px;
+  
 }
 #name-and-slogan {
   float: left; /* LTR */
@@ -457,8 +461,25 @@ h1#site-name {
 /* --------------- Main Menu ------------ */
 
 #main-menu {
-  clear: both;
+   clear: none;
 }
+
+#savannah-menu-logo{
+height: 41px;
+    left: 46px;
+    position: absolute;
+    top: 68px;
+    width: 990px;
+    z-index: 100001;
+}
+
+#main-menu.savannah-main-menu {
+	float:right;
+ }
+
+
+
+
 #main-menu-links {
   font-size: 0.929em;
   margin: 0;
@@ -470,6 +491,19 @@ h1#site-name {
   padding: 0 1px;
   margin: 0 1px;
 }
+
+#main-menu.savannah-main-menu > li: after{
+    border-left: 1px dotted #3A3737;
+    content: "";
+    display: block;
+    height: 21px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 0;
+    z-index: 9;
+ }
+ 
 #main-menu-links a {
   color: #333;
   background: #ccc;
@@ -654,10 +688,10 @@ h1#page-title {
 .user-picture img {
   margin: 0 0 1em;
 }
-ul.links {
+/*ul.links {
   color: #68696b;
   font-size: 0.821em;
-}
+}*/
 .node-unpublished {
   margin: -20px -15px 0;
   padding: 20px 15px 0;
