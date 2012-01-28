@@ -70,6 +70,17 @@ function savannahwildlife_process_page(&$variables) {
     );
     // Make sure the shortcut link is the first item in title_suffix.
     $variables['title_suffix']['add_or_remove_shortcut']['#weight'] = -100;
+	
+	 //add primary links variable
+ if (isset($vars['main_menu'])) {
+	$pid = variable_get('menu_main_links_source', 'main-menu');
+	$tree = menu_tree($pid);
+	$tree = str_replace(' class="menu"', '', $tree);
+	$vars['primary_nav'] = drupal_render($tree);
+	}else{
+	$vars['primary_nav'] = FALSE;
+	}
+
   }
 }
 

@@ -152,9 +152,12 @@
       </a>
     <?php endif; ?>
     <?php if ($main_menu):
-	//dsm($main_menu); ?>
+	//dsm($main_menu);
+	 ?>
       <div id="main-menu" class="navigation">
-        <?php print theme('links__system_main_menu', array(
+        <?php
+		if ($primary_nav): print $primary_nav; endif; 
+		 print theme('links__system_main_menu', array(
           'links' => $main_menu,
           'attributes' => array(
             'id' => 'main-menu-links',
