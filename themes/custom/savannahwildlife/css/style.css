@@ -485,14 +485,31 @@ height: 41px;
   margin: 0;
   padding: 0 15px;
 }
-#main-menu-links li {
-  float: left; /* LTR */
+#main-menu-links li{
+  /*float: left; /* LTR 
   list-style: none;
   padding: 0 1px;
   margin: 0 1px;
+  background: none repeat scroll 0 0 green;*/
+  
+
+    background: none repeat scroll 0 0 green;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 41px;
+    left: 101px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0 7px 0 1px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 881px;
+    z-index: 1000;
+
 }
 
-#main-menu.savannah-main-menu > li: after{
+#main-menu-links > li: after{
     border-left: 1px dotted #3A3737;
     content: "";
     display: block;
@@ -688,10 +705,10 @@ h1#page-title {
 .user-picture img {
   margin: 0 0 1em;
 }
-/*ul.links {
+ul.links {
   color: #68696b;
   font-size: 0.821em;
-}*/
+}
 .node-unpublished {
   margin: -20px -15px 0;
   padding: 20px 15px 0;

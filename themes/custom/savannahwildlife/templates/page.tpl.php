@@ -154,21 +154,22 @@
     <?php if ($main_menu):
 	//dsm($main_menu);
 	 ?>
-      <div id="main-menu" class="navigation">
+      <div id="main-menu" class="navigation savannah-main-menu">
         <?php
 		if ($primary_nav): print $primary_nav; endif; 
-		 print theme('links__system_main_menu', array(
-          'links' => $main_menu,
-          'attributes' => array(
-            'id' => 'main-menu-links',
-            'class' => array('links', 'clearfix', 'savannah-main-menu'),
-          ),
-          'heading' => array(
-            'text' => t('Main menu'),
-            'level' => 'h2',
-            'class' => array('element-invisible'),
-          ),
-        )); ?>
+		// print theme('links__system_main_menu', array(
+        //  'links' => $primary_nav,
+        //  'attributes' => array(
+        //    'id' => 'main-menu-links',
+        //    'class' => array('links', 'clearfix', 'savannah-main-menu'),
+         // ),
+         // 'heading' => array(
+         //   'text' => t('Main menu'),
+         //   'level' => 'h2',
+         //   'class' => array('element-invisible'),
+         // ),
+       // ));
+		 ?>
       </div> <!-- /#main-menu -->
     <?php endif; ?>
     </div>

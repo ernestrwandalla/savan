@@ -40,6 +40,16 @@ function savannahwildlife_process_html(&$variables) {
  * Override or insert variables into the page template.
  */
 function savannahwildlife_process_page(&$variables) {
+	 //add primary links variable
+ if (isset($variables['main_menu'])) {	 
+	$pid = variable_get('menu_main_links_source', 'main-menu');
+	$tree = menu_tree($pid);
+	$tree = str_replace(' class="menu"', '', $tree);
+	$variables['primary_nav'] = drupal_render($tree);
+	}else{
+	$variables['primary_nav'] = FALSE;
+	}
+
   // Hook into color.module.
   if (module_exists('color')) {
     _color_page_alter($variables);
@@ -70,17 +80,6 @@ function savannahwildlife_process_page(&$variables) {
     );
     // Make sure the shortcut link is the first item in title_suffix.
     $variables['title_suffix']['add_or_remove_shortcut']['#weight'] = -100;
-	
-	 //add primary links variable
- if (isset($vars['main_menu'])) {
-	$pid = variable_get('menu_main_links_source', 'main-menu');
-	$tree = menu_tree($pid);
-	$tree = str_replace(' class="menu"', '', $tree);
-	$vars['primary_nav'] = drupal_render($tree);
-	}else{
-	$vars['primary_nav'] = FALSE;
-	}
-
   }
 }
 
