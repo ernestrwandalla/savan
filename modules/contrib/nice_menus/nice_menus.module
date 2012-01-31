@@ -212,14 +212,15 @@ function nice_menus_block_configure($delta) {
     '#default_value' => variable_get('nice_menus_depth_' . $delta, -1),
     '#options' => drupal_map_assoc(range(-1, 5)),
   );
-  $form['nice_menus_type_' . $delta] = array(
-    '#type' => 'select',
-    '#title' => t('Menu Style'),
-    '#description' => t('right: menu items are listed on top of each other and expand to the right') . '<br />' . t('left: menu items are listed on top of each other and expand to the left') . '<br />' . t('down: menu items are listed side by side and expand down'),
-    '#default_value' => variable_get('nice_menus_type_' . $delta, 'right'),
-    '#options' => drupal_map_assoc(array('right', 'left', 'down')),
-  );
-  return $form;
+ 
+  $form['nice_menus_type_'. $delta] = array(
+        '#type' => 'select',
+        '#title' => t('Menu Style'),
+        '#description' => t('right: menu items are listed on top of each other and expand to the right') .'<br />'. t('left: menu items are listed on top of each other and expand to the left') .'<br />'. t('down: menu items are listed side by side and expand down').'<br />'. t('downdown: menu items are listed side by side on all levels'),
+        '#default_value' => variable_get('nice_menus_type_'. $delta, 'right'),
+        '#options' => drupal_map_assoc(array('right', 'left', 'down', 'downdown')),
+      );
+      return $form;
 }
 
 /**

@@ -151,12 +151,13 @@
         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
       </a>
     <?php endif; ?>
-    <?php if ($main_menu):
+   <?php //if ($main_menu): 
 	//dsm($main_menu);
 	 ?>
       <div id="main-menu" class="navigation savannah-main-menu">
-        <?php
-		if ($primary_nav): print $primary_nav; endif; 
+       <?php
+	   print theme('nice_menu_primary_links','downdown'); 
+		//if ($primary_nav): print $primary_nav; endif; 
 		// print theme('links__system_main_menu', array(
         //  'links' => $primary_nav,
         //  'attributes' => array(
@@ -171,7 +172,7 @@
        // ));
 		 ?>
       </div> <!-- /#main-menu -->
-    <?php endif; ?>
+    <?php //endif; ?>
     </div>
       <?php print render($page['featured']); ?>
     </div></div> <!-- /.section, /#featured -->
