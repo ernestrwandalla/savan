@@ -621,7 +621,7 @@ h1#site-name {
 
 #featured {
   text-align: center;
-  font-size: 1.643em;
+  font-size: 8pt;
   font-weight: normal;
   line-height: 1.4;
   padding: 20px 0 45px;
@@ -1760,17 +1760,20 @@ ul.nice-menu ul {
   padding: 0;
   margin: 0;
   border-top: 1px solid #ccc;
+
 }
 
 ul.nice-menu li {
   border: 1px solid #ccc;
   border-top: 0;
   float: left; /* LTR */
-  background-color: #eee;
+  background-color: #688037;
 }
 
 ul.nice-menu a {
   padding: 0.3em 5px 0.3em 5px;
+  color: #ffff;
+  text-decoration:none;
 }
 
 ul.nice-menu ul {
@@ -1852,10 +1855,12 @@ ul.nice-menu-left a, ul.nice-menu-left ul a {
 ul.nice-menu-down {
   float: left; /* LTR */
   border: 0;
+  
+  
 }
 
 ul.nice-menu-down li {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #688037;
 }
 
 ul.nice-menu-down li li {
@@ -1877,22 +1882,24 @@ ul.nice-menu-down li ul li ul {
 
 ul.nice-menu-down .menuparent a {
   padding-right: 15px; /* LTR */
+  
 }
 
 ul.nice-menu-down li.menuparent {
-  background: #eee url(arrow-down.png) right center no-repeat; /* LTR */
+  background: #688037 url(arrow-down.png) right center no-repeat; /* LTR */
 }
 
 ul.nice-menu-down li.menuparent:hover {
-  background: #ccc url(arrow-down.png) right center no-repeat; /* LTR */
+  background: #DDD4C3 url(arrow-down.png) right center no-repeat; /* LTR */
 }
 
 ul.nice-menu-down li li.menuparent {
-  background: #eee url(arrow-right.png) right center no-repeat; /* LTR */
+  background: #688037 url(arrow-right.png) right center no-repeat; /* LTR */
 }
 
 ul.nice-menu-down li li.menuparent:hover {
-  background: #ccc url(arrow-right.png) right center no-repeat; /* LTR */
+  background: #DDD4C3 url(arrow-right.png) right center no-repeat; /* LTR */
+  
 }
 
 /******************************
@@ -1956,26 +1963,19 @@ ul.nice-menu-down li {
    position: static;
 }
 
-  nice-menu
-  {
-    border: 0;
-    background: #688037;
-  }
-ul.nice-menu, ul.nice-menu ul {
-	background: #688037;
-}
+  
+
   ul.nice-menu,
   ul.nice-menu ul,
   ul.nice-menu li {
     border: 0;
-	background:#688037;
 	
   }
-  ul.nice-menu-right li.menuparent,
-  ul.nice-menu-right li li.menuparent{
-   background:#688037;
-  }
+ 
+
 
   li.menuparent li, li.menuparent ul {
     background: #DDD4C3;
+	font-size: 1.0 em
   }
+  

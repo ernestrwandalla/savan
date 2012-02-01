@@ -156,7 +156,7 @@
 	 ?>
       <div id="main-menu" class="navigation savannah-main-menu">
        <?php
-	   print theme('nice_menu_primary_links','downdown'); 
+	   
 		//if ($primary_nav): print $primary_nav; endif; 
 		// print theme('links__system_main_menu', array(
         //  'links' => $primary_nav,
