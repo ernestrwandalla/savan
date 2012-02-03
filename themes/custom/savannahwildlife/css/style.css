@@ -544,7 +544,7 @@ h1#site-name {
 .logo_image_girraffe
 {
 	position: absolute;
-	left: 3.1em;
+	left: 3.4em;
 }
 
 #logo {
@@ -555,7 +555,6 @@ h1#site-name {
   width: 277px;
   font-family: Myriad Pro,"Trebuchet MS", Arial, Helvetica, sans-serif;
   text-decoration:none;
-  border:solid;
 }
 .logon_with_you
 {
@@ -651,7 +650,7 @@ h1#site-name {
   background: #f0f0f0;
   background: rgba(30, 50, 10, 0.08);
   border-bottom: 1px solid #e7e7e7;
-  text-shadow: 1px 1px #fff;
+/*  text-shadow: 1px 1px #fff; */
 }
 #featured h2 {
   font-size: 1.174em;
@@ -1790,12 +1789,9 @@ ul.nice-menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  border-top: 1px solid #ccc;
-
 }
 
 ul.nice-menu li {
-  border: 1px solid #ccc;
   border-top: 0;
   float: left; /* LTR */
   background-color: #688037;
@@ -1811,13 +1807,11 @@ ul.nice-menu a {
 ul.nice-menu ul {
   top: 1.8em;
   left: -1px; /* LTR */
-  border: 0;
-  border-top: 1px solid #ccc;
   margin-right: 0; /* LTR */
 }
 
 ul.nice-menu ul li {
-  width: 12.5em;
+ /* width: 12.5em;*/
 }
 
 /******************************
@@ -1892,14 +1886,13 @@ ul.nice-menu-down {
 }
 
 ul.nice-menu-down li {
-  border-top: 1px solid #688037;
 }
 
 ul.nice-menu-down li li {
-  border-top: 0;
   height: 10px;
-  margin-top: 8px;
-  padding-bottom: 20px;
+  margin-top: 0px;
+  padding-bottom: 10px;
+  line-height:22px;
 }
 
 ul.nice-menu-down ul {
@@ -1925,9 +1918,22 @@ ul.nice-menu-down li.menuparent {
 }
 
 ul.nice-menu-down li.menuparent:hover {
-  background-color: #DDD4C3; /* LTR */
-  
+      	background-color: #DDD4C3; /* LTR */
 }
+
+ul.nice-menu-down li a:hover {
+	color:brown;
+}
+/*
+ul.nice-menu-down li a:hover{
+	font-size:21px;
+	font-weight:bold;
+}
+
+ul.nice-menu-down li a:hover{
+	font-size:10px;
+	font-weight:normal;	
+}*/
 
 ul.nice-menu-down li li.menuparent {
   background-color: #688037; /* LTR */
@@ -2002,20 +2008,30 @@ ul.nice-menu-down li {
 
   ul.nice-menu {
 	  border-top-radius: 10px;
-	  border:solid #688037 !important; 
   }
 
-  ul.nice-menu,
-  ul.nice-menu ul,
-  ul.nice-menu li {
-    border: solid;
-	height:31px;
-  }
- 
+  ul.nice-menu{
+	height:23px;
+        width:654px;
+ }
+  
 
+ ul.nice-menu li{
+	height:29px;
+        line-height:25px;
+}
+
+  ul.nice-menu ul{
+	  height:15px;
+  }
 
   li.menuparent li, li.menuparent ul {
     background: #DDD4C3;
 	font-size: 1.0 em
   }
-  
+
+  ul.nice-menu li.menuparent ul, #header-region ul.nice-menu li.menuparent ul {
+      margin-top:10px;
+      width:668px;
+      height:27px;
+}
