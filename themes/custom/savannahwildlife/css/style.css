@@ -292,14 +292,7 @@ ul.tips {
 #skip-link a:focus {
   outline: 0;
 }
-#logo {
-  float: left; /* LTR */
-  padding: 0px; /* LTR */
-  /*background: none repeat scroll 0 0 green;*/
-  height: 41px;
-  width: 284px;
-  
-}
+
 #name-and-slogan {
   float: left; /* LTR */
   padding-top: 34px;
@@ -527,14 +520,7 @@ h1#site-name {
 	padding:0;
 }
 
-#savannah-menu-logo{
-    height: 56px;
-    left: 46px;
-    position: absolute;
-    top: 198px;
-    width: 990px;
-    z-index: 100001;
-}
+
 
 .savannah-main-menu ul li{
  
@@ -544,22 +530,58 @@ h1#site-name {
 	float:right;
  }*/
 
+.logo_site_name
+{
+	font-size: 2.8em;
+	left: 0.2em;
+	letter-spacing: 0.1em;
+	margin-left: 6px;
+	position: absolute;
+	top:0.1 px;
+	color:#D7DF23;
+}
 
+.logo_image_girraffe
+{
+	position: absolute;
+	left: 3.1em;
+}
 
+#logo {
+  float: left; /* LTR */
+  padding: 0px; /* LTR */
+  /*background: none repeat scroll 0 0 green;*/
+  height: 55px;
+  width: 277px;
+  font-family: Myriad Pro,"Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-decoration:none;
+  border:solid;
+}
+.logon_with_you
+{
+	color:#D7DF23;
+	bottom: 0.1em;
+    left: 6.4em;
+    position: absolute;
+}
+#savannah-menu-logo{
+    height: 56px;
+    left: 219px;
+    position: absolute;
+    top: 242px;
+    width: 945px;
+    z-index: 100001;
+	color:D7DF23;
+	background-color:#688037;
+	
+}
 
 #main-menu-links {
   font-size: 0.929em;
   margin: 0;
   padding: 0 15px;
 }
-#main-menu-links li{
 
-
-}
-
-#main-menu-links > li: after{
-   
- }
  
 #main-menu-links a {
   color: #333;
@@ -1753,7 +1775,16 @@ div.admin-panel .description {
 /******************************
  Global CSS for ALL menu types
 ******************************/
+ul.nice-menu li.menuparent a.active {
+    color: #572700;
+    background-color: #DDD4C3;
+	font-weight:bold;
+	
 
+	
+	
+  }
+  
 ul.nice-menu,
 ul.nice-menu ul {
   list-style: none;
@@ -1769,6 +1800,7 @@ ul.nice-menu li {
   float: left; /* LTR */
   background-color: #688037;
 }
+
 
 ul.nice-menu a {
   padding: 0.3em 5px 0.3em 5px;
@@ -1865,6 +1897,9 @@ ul.nice-menu-down li {
 
 ul.nice-menu-down li li {
   border-top: 0;
+  height: 10px;
+  margin-top: 8px;
+  padding-bottom: 20px;
 }
 
 ul.nice-menu-down ul {
@@ -1886,19 +1921,20 @@ ul.nice-menu-down .menuparent a {
 }
 
 ul.nice-menu-down li.menuparent {
-  background: #688037 url(arrow-down.png) right center no-repeat; /* LTR */
+  background-color: #688037; /* LTR */
 }
 
 ul.nice-menu-down li.menuparent:hover {
-  background: #DDD4C3 url(arrow-down.png) right center no-repeat; /* LTR */
+  background-color: #DDD4C3; /* LTR */
+  
 }
 
 ul.nice-menu-down li li.menuparent {
-  background: #688037 url(arrow-right.png) right center no-repeat; /* LTR */
+  background-color: #688037; /* LTR */
 }
 
 ul.nice-menu-down li li.menuparent:hover {
-  background: #DDD4C3 url(arrow-right.png) right center no-repeat; /* LTR */
+  background-color: #DDD4C3; /* LTR */
   
 }
 
@@ -1963,13 +1999,17 @@ ul.nice-menu-down li {
    position: static;
 }
 
-  
+
+  ul.nice-menu {
+	  border-top-radius: 10px;
+	  border:solid #688037 !important; 
+  }
 
   ul.nice-menu,
   ul.nice-menu ul,
   ul.nice-menu li {
-    border: 0;
-	
+    border: solid;
+	height:31px;
   }
  
 
