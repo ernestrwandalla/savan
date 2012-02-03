@@ -42,7 +42,9 @@ ul.nice-menu li.over ul {
 ul.nice-menu ul li {
   display: block;
 }
-
+ul.nice-menu {
+	border-top-right-radius: 10px; 
+}
 ul.nice-menu:after {
   content: ".";
   display: block;
@@ -107,9 +109,11 @@ ul.nice-menu li.over li.over li.over ul ul ul,
 ul.nice-menu li.menuparent ul,
 /* For Garland header. */
 #header-region ul.nice-menu li.menuparent ul {
+	margin-top: 18px;
 	overflow: visible !important;
 	/* overflow: hidden; */
 }
+
 
 ul.nice-menu li.menuparent ul iframe,
 /* For Garland header. */

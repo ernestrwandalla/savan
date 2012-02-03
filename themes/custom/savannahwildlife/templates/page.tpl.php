@@ -148,7 +148,8 @@
      <div id = "savannah-menu-logo">
      <?php if ($logo): ?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+        <span class ="logo_site_name">SAVANNAH</span><span class = "logo_image_girraffe"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></span>
+        <span class="logon_with_you">WITH YOU IN MIND</span>
       </a>
     <?php endif; ?>
    <?php //if ($main_menu): 
@@ -156,7 +157,8 @@
 	 ?>
       <div id="main-menu" class="navigation savannah-main-menu">
        <?php
-	   
+	   $nice_menu_block = module_invoke('nice_menus', 'block_view', 1);
+       print render($nice_menu_block['content']);
 		//if ($primary_nav): print $primary_nav; endif; 
 		// print theme('links__system_main_menu', array(
         //  'links' => $primary_nav,
