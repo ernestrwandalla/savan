@@ -1894,7 +1894,8 @@ ul.nice-menu-down {
   
 }
 
-ul.nice-menu-down li {
+ul.nice-menu-down li:hover {
+  color:brown;
 }
 
 ul.nice-menu-down li li {
@@ -1905,6 +1906,8 @@ ul.nice-menu-down li li {
   -webkit-border-top-left-radius: 5px;
   -khtml-border-top-left-radius: 5px;
   border-bottom-top-left-radius: 5px;
+  text-indent:18px;
+  color:brown;
 }
 
 ul.nice-menu-down ul {
@@ -1939,6 +1942,7 @@ ul.nice-menu-down .menuparent a {
 
 ul.nice-menu-down li.menuparent {
   background-color: #688037; /* LTR */
+  font:8px;
 }
 
 ul.nice-menu-down li.menuparent:hover {
@@ -1952,16 +1956,20 @@ ul.nice-menu-down li a:hover {
 	
 }
 
+ul.nice-menu-down li ul li a {
+	color:brown;
+}
 
 ul.nice-menu-down li ul li a:hover {
-	font-size:12px;
-	font-weight:normal;
+	font-weight:bold;
+	font-size:10px;
+	width:100%;
 }
 
 ul.nice-menu-down li:hover {
 	color:brown;
 	font-size:10px;
-	width:150px;	
+	width:160px;	
 	font-weight:bolder;
 	margin-top:-12px;
 	height:45px;
@@ -1981,7 +1989,7 @@ ul.nice-menu-down li ul li:hover {
 	margin-top:0px;
 	height:29px;
 	margin-top:0px;
-	font-size:6px;
+	font-size:10px;
 }
 
 ul.nice-menu-down li li.menuparent {
