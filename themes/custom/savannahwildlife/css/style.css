@@ -551,7 +551,7 @@ h1#site-name {
   float: left; /* LTR */
   padding: 0px; /* LTR */
   /*background: none repeat scroll 0 0 green;*/
-  height: 55px;
+  height: 59px;
   width: 277px;
   font-family: Myriad Pro,"Trebuchet MS", Arial, Helvetica, sans-serif;
   text-decoration:none;
@@ -564,15 +564,24 @@ h1#site-name {
     position: absolute;
 }
 #savannah-menu-logo{
-    height: 56px;
+    height: 59px;
     left: 219px;
     position: absolute;
     top: 242px;
-    width: 945px;
+    width: 928px;
     z-index: 100001;
 	color:D7DF23;
 	background-color:#688037;
-	
+	-khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+pre {
+  background-color: #f2f2f2;
+  background-color: rgba(40, 40, 0, 0.06);
+  margin: 10px 0;
+  overflow: hidden;
 }
 
 #main-menu-links {
@@ -1799,7 +1808,7 @@ ul.nice-menu li {
 
 
 ul.nice-menu a {
-  padding: 0.3em 5px 0.3em 5px;
+  padding: 0.3em 0px 0.3em 0px;
   color: #ffff;
   text-decoration:none;
 }
@@ -1889,14 +1898,29 @@ ul.nice-menu-down li {
 }
 
 ul.nice-menu-down li li {
-  height: 10px;
-  margin-top: 0px;
-  padding-bottom: 10px;
-  line-height:22px;
+  margin-top: 5px;
+  line-height:16px;
+  font-weight:normal;
+   -moz-border-top-left-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -khtml-border-top-left-radius: 5px;
+  border-bottom-top-left-radius: 5px;
 }
 
 ul.nice-menu-down ul {
-  left: 0; /* LTR */
+  -moz-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -khtml-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -moz-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -khtml-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -khtml-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  left:0;
 }
 
 ul.nice-menu-down ul li {
@@ -1923,17 +1947,42 @@ ul.nice-menu-down li.menuparent:hover {
 
 ul.nice-menu-down li a:hover {
 	color:brown;
-}
-/*
-ul.nice-menu-down li a:hover{
-	font-size:21px;
-	font-weight:bold;
+	font-size:10px;
+	font-weight:bolder;
+	
 }
 
-ul.nice-menu-down li a:hover{
+
+ul.nice-menu-down li ul li a:hover {
+	font-size:12px;
+	font-weight:normal;
+}
+
+ul.nice-menu-down li:hover {
+	color:brown;
 	font-size:10px;
-	font-weight:normal;	
-}*/
+	width:150px;	
+	font-weight:bolder;
+	margin-top:-12px;
+	height:45px;
+	background:none repeat scroll 0 0 #DDD4C3;
+        -moz-border-top-right-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        -khtml-border-top-right-radius: 5px;
+        border-top-right-radius: 5px;
+        -webkit-border-top-left-radius: 5px;
+        -khtml-border-top-left-radius: 5px;
+        border-top-left-radius: 5px;
+        -moz-border-top-left-radius: 5px;
+}
+
+
+ul.nice-menu-down li ul li:hover {
+	margin-top:0px;
+	height:29px;
+	margin-top:0px;
+	font-size:6px;
+}
 
 ul.nice-menu-down li li.menuparent {
   background-color: #688037; /* LTR */
@@ -2011,14 +2060,14 @@ ul.nice-menu-down li {
   }
 
   ul.nice-menu{
-	height:23px;
-        width:654px;
+	height:59px;
+        width:648px;
  }
   
 
  ul.nice-menu li{
-	height:29px;
         line-height:25px;
+	font-weight:bold;
 }
 
   ul.nice-menu ul{
@@ -2032,6 +2081,6 @@ ul.nice-menu-down li {
 
   ul.nice-menu li.menuparent ul, #header-region ul.nice-menu li.menuparent ul {
       margin-top:10px;
-      width:668px;
-      height:27px;
+      width:651px;
+      height:31px;
 }
