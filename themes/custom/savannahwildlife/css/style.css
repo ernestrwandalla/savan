@@ -552,7 +552,7 @@ h1#site-name {
   padding: 0px; /* LTR */
   /*background: none repeat scroll 0 0 green;*/
   height: 59px;
-  width: 277px;
+  width: 273px;
   font-family: Myriad Pro,"Trebuchet MS", Arial, Helvetica, sans-serif;
   text-decoration:none;
 }
@@ -1962,14 +1962,13 @@ ul.nice-menu-down li ul li a {
 
 ul.nice-menu-down li ul li a:hover {
 	font-weight:bold;
-	font-size:10px;
-	width:100%;
+	font-size:8px;
+
 }
 
 ul.nice-menu-down li:hover {
-	color:brown;
+	color:brown !important;
 	font-size:10px;
-	width:160px;	
 	font-weight:bolder;
 	margin-top:-12px;
 	height:45px;
@@ -1982,14 +1981,20 @@ ul.nice-menu-down li:hover {
         -khtml-border-top-left-radius: 5px;
         border-top-left-radius: 5px;
         -moz-border-top-left-radius: 5px;
+	text-indent:10px;
+	text-align:center;
+	line-height:40px;
 }
 
 
 ul.nice-menu-down li ul li:hover {
-	margin-top:0px;
+	margin-top:5px;
 	height:29px;
-	margin-top:0px;
 	font-size:10px;
+	font-weight:bold;
+	line-height:16px;
+	height:20px;
+	text-indent:18px;
 }
 
 ul.nice-menu-down li li.menuparent {
@@ -2069,7 +2074,7 @@ ul.nice-menu-down li {
 
   ul.nice-menu{
 	height:59px;
-        width:648px;
+        width:655px;
  }
   
 
@@ -2084,11 +2089,10 @@ ul.nice-menu-down li {
 
   li.menuparent li, li.menuparent ul {
     background: #DDD4C3;
-	font-size: 1.0 em
   }
 
   ul.nice-menu li.menuparent ul, #header-region ul.nice-menu li.menuparent ul {
       margin-top:10px;
-      width:651px;
+      width:655px;
       height:31px;
 }
