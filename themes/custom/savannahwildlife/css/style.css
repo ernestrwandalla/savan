@@ -522,13 +522,14 @@ h1#site-name {
 
 
 
-.savannah-main-menu ul li{
- 
-}
-
 #main-menu.savannah-main-menu {
 	float:right;
  }*/
+
+ #savannah-homepage .pane-block-2,#savannah-homepage .pane-block-3{
+	float:left;
+}
+
 
 .logo_site_name
 {
