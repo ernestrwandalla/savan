@@ -1,7 +1,31 @@
+@font-face {
+    font-family: 'FontinSansRegular';
+    src: url('fontin_sans_r_45b-webfont.eot');
+    src: url('fontin_sans_r_45b-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fontin_sans_r_45b-webfont.woff') format('woff'),
+         url('fontin_sans_r_45b-webfont.ttf') format('truetype'),
+         url('fontin_sans_r_45b-webfont.svg#FontinSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dearJoe4Regular';
+    src: url('dj4trial-webfont.eot');
+    src: url('dj4trial-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dj4trial-webfont.woff') format('woff'),
+         url('dj4trial-webfont.ttf') format('truetype'),
+         url('dj4trial-webfont.svg#dearJoe4Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /* ---------- Overall Specifications ---------- */
 
-body {
+body
+ {
   line-height: 1.5;
   font-size: 87.5%;
   word-wrap: break-word;
@@ -9,6 +33,7 @@ body {
   padding: 0;
   border: 0;
   outline: 0;
+  background-color:#fff8e0;
 }
 a:link,
 a:visited {
@@ -451,6 +476,83 @@ h1#site-name {
   padding: 0 0.5em;
 }
 
+.frontpagecontent h1{
+	font-family: FontinSansRegular, Verdana, Geneva, sans-serif;
+	color: #61330f;
+	font-size: 22pt;
+}
+
+
+
+.familyname {
+font-family: dearJoe4Regular, Verdana, Geneva, sans-serif;
+font-size: 26pt;
+}
+
+.migrationtitle h2{
+	color: #668037;
+	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
+	
+}
+
+.hoteltitle h2{
+	color: #668037;
+	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
+	
+}
+
+.sampletitle h2{
+	color: #668037;
+	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
+}
+
+.sampletext p{
+	font-family:  "Arial Regular", Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+
+}
+
+.hoteltext p{
+	font-family:  "Arial Regular", Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+
+}
+
+.migration p{
+	font-family:  "Arial Regular", Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+}
+
+
+
+
+.pane-content {
+	float:right;
+	padding-bottom: 50px;
+}
+
+#main-wrapper {
+	background-color: #fff8e0;
+}
+.migration {
+	border-right: 1px solid #603314;
+    padding-right: 65px;
+}
+
+.Sampleblock
+{
+	border-right: 1px solid #603314;
+	padding-left: 45px;
+    padding-right: 30px;
+
+}
+
+.hotelblock
+{
+	padding-left: 10px;
+
+}
+
 /* --------------- Main Menu ------------ */
 
 #main-menu {
@@ -530,7 +632,20 @@ h1#site-name {
 	float:left;
 }
 
+#savannah-homepage .panel-col-bottom{
+	border-top: 1px solid #603314;
+	padding-top: 20px;
+}
 
+.panel-2col-stacked .panel-col-first {
+    float: left;
+    width: 60%;
+}
+
+ .panel-2col-stacked .panel-col-last {
+    float: right;
+	width: 334px;
+}
 .logo_site_name
 {
 	font-size: 2.8em;
@@ -657,10 +772,10 @@ pre {
   line-height: 1.4;
   padding: 20px 0 45px;
   margin: 0;
-  background: #f0f0f0;
-  background: rgba(30, 50, 10, 0.08);
+  background: #fff8e0;
+  /*background: rgba(30, 50, 10, 0.08);
   border-bottom: 1px solid #e7e7e7;
-/*  text-shadow: 1px 1px #fff; */
+  text-shadow: 1px 1px #fff; */
 }
 #featured h2 {
   font-size: 1.174em;
