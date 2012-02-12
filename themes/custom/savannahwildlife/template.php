@@ -163,7 +163,7 @@ function savannahwildlife_field__taxonomy_term_reference($variables) {
 
 function savannahwildlife_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'search_block_form') {
-	//  dsm($form);
+  //dsm($form);
     $form['search_block_form']['#title'] = t('Search'); // Change the text on the label element
     $form['search_block_form']['#title_display'] = 'invisible'; // Toggle label visibilty
     $form['search_block_form']['#size'] = 40;  // define size of the textfield

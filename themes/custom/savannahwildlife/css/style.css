@@ -531,6 +531,17 @@ font-size: 26pt;
 	padding-bottom: 50px;
 }
 
+.pane-views-savannah-views-slideshow-block .pane-content .view-savannah-views-slideshow{
+	position:absolute;
+	float:none;
+	top:-88px;
+	left:-24px;
+ }
+
+#savannah-homepage .center-wrapper{
+	padding-top:380px;
+}
+
 #main-wrapper {
 	background-color: #fff8e0;
 }
@@ -681,18 +692,19 @@ font-size: 26pt;
 }
 #savannah-menu-logo{
     height: 59px;
-    left: 219px;
+    left: 80px;
     position: absolute;
-    top: 162px;
+    top: 57px;
     width: 928px;
     z-index: 100001;
-	color:D7DF23;
-	background-color:#688037;
-	-khtml-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+    color:D7DF23;
+    background-color:#688037;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }
+
 pre {
   background-color: #f2f2f2;
   background-color: rgba(40, 40, 0, 0.06);
@@ -1489,6 +1501,12 @@ input.form-submit:focus {
   margin-bottom: 1em;
   margin-top: 2px;
 }
+
+.form-item-search-block-form.form-item,.form-item-search-block-form.form-actions {
+  position:absolute;
+  z-index:100;
+}
+
 .form-item label {
   font-size: 0.929em;
 }
@@ -2224,11 +2242,18 @@ ul.nice-menu-down li {
     height: 10px;
     margin-left: 733px;
     width: 169px;
-	margin-top: 4px;
-}
+    margin-top: 4px;
+    border-radius:5px;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+  }
 
 #specialist {
-	margin-top: -10px;
+	margin-top: 0px;
+	position:absolute;
+	width:100%;
+	z-index:100;
 }
 .talk {
 	margin-left: 445px;
@@ -2250,5 +2275,5 @@ ul.nice-menu-down li {
 }
 
 #content .section, .sidebar .section {
-    margin-top: 100px;
+    margin-top: 0px;
 }
