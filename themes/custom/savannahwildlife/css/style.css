@@ -477,9 +477,9 @@ h1#site-name {
 }
 
 .frontpagecontent h1{
-	font-family: FontinSansRegular, Verdana, Geneva, sans-serif;
+	font-family: "FontinSansRegular", Verdana, Geneva, sans-serif;
 	color: #61330f;
-	font-size: 22pt;
+	font-size: 19pt;
 }
 
 
@@ -491,35 +491,35 @@ font-size: 26pt;
 
 .migrationtitle h2{
 	color: #668037;
-	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
+	font-family: "FontinSansRegular", Arial, Helvetica, sans-serif;
 	
 }
 
 .hoteltitle h2{
 	color: #668037;
-	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
+	font-family: "FontinSansRegular", Arial, Helvetica, sans-serif;
 	
 }
 
 .sampletitle h2{
 	color: #668037;
-	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
+	font-family: "FontinSansRegular", Arial, Helvetica, sans-serif;
 }
 
 .sampletext p{
-	font-family:  "Arial Regular", Arial, Helvetica, sans-serif;
+	font-family:  "FontinSansRegular", Arial, Helvetica, sans-serif;
 	font-size: 14pt;
 
 }
 
 .hoteltext p{
-	font-family:  "Arial Regular", Arial, Helvetica, sans-serif;
+	font-family:  "FontinSansRegular", Arial, Helvetica, sans-serif;
 	font-size: 14pt;
 
 }
 
 .migration p{
-	font-family:  "Arial Regular", Arial, Helvetica, sans-serif;
+	font-family:  "FontinSansRegular", Arial, Helvetica, sans-serif;
 	font-size: 14pt;
 }
 
@@ -683,7 +683,7 @@ font-size: 26pt;
     height: 59px;
     left: 219px;
     position: absolute;
-    top: 242px;
+    top: 162px;
     width: 928px;
     z-index: 100001;
 	color:D7DF23;
@@ -806,11 +806,16 @@ pre {
 .content {
   margin-top: 10px;
 }
+
 h1#page-title {
+  color: #61330F;
+  font-family: "FontinSansRegular",Verdana,Geneva,sans-serif;
   font-size: 2em;
   line-height: 1;
 }
 #content h2 {
+  color: #61330F;
+  font-family: "FontinSansRegular",Verdana,Geneva,sans-serif;
   margin-bottom: 2px;
   font-size: 1.429em;
   line-height: 1.4;
@@ -1685,7 +1690,8 @@ div.vertical-tabs .vertical-tabs-panes fieldset.vertical-tabs-pane {
 }
 #search-form input#edit-keys,
 #block-search-form .form-item-search-block-form input {
-  float: left; /* LTR */
+  /*float: left;  LTR */
+
   font-size: 1em;
   height: 1.143em;
   margin-right: 5px;
@@ -1693,17 +1699,16 @@ div.vertical-tabs .vertical-tabs-panes fieldset.vertical-tabs-pane {
 }
 #search-block-form input.form-submit,
 #search-form input.form-submit {
-  margin-left: 0;
-  margin-right: 0;
-  height: 25px;
-  width: 34px;
-  padding: 0;
+  float:right;
+  height: 12px;
+  width: 0px;
   cursor: pointer;
-  text-indent: -9999px;
   border-color: #e4e4e4 #d2d2d2 #b4b4b4;
-  background: url(../images/search-button.png) no-repeat center top;
+  background: url(../images/search-button.png);
+  background-repeat:no-repeat;
   overflow: hidden;
 }
+
 #search-block-form input.form-submit:hover,
 #search-block-form input.form-submit:focus,
 #search-form input.form-submit:hover,
@@ -2211,4 +2216,39 @@ ul.nice-menu-down li {
       margin-top:10px;
       width:655px;
       height:31px;
+}
+#search-form input#edit-keys, #block-search-form .form-item-search-block-form input {
+    color: gray;
+    float: left;
+    font-size: 1em;
+    height: 10px;
+    margin-left: 733px;
+    width: 169px;
+	margin-top: 4px;
+}
+
+#specialist {
+	margin-top: -10px;
+}
+.talk {
+	margin-left: 445px;
+    position: absolute;
+}
+
+.phone {
+    font-size: 15px;
+    margin-left: 614px;
+    margin-top: -3px;
+    position: absolute;
+}
+.content {
+    margin-top: 10px;
+	font-family:FontinSansRegular, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	letter-spacing: 0.1em;
+	text-align:justify;
+}
+
+#content .section, .sidebar .section {
+    margin-top: 100px;
 }
