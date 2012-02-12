@@ -4,6 +4,7 @@
 body,
 body.overlay {
   color: #3b3b3b;
+  min-width:1081px;
 }
 .comment .comment-arrow {
   border-color: #ffffff;
