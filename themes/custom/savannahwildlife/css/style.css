@@ -61,7 +61,8 @@ h2 {
   font-size: 1.143em;
 }
 p {
-  margin: 0 0 1.2em;
+  margin-top: -10px;
+  line-height:2.0em;
 }
 del {
   text-decoration: line-through;
@@ -489,57 +490,40 @@ font-family: dearJoe4Regular, Verdana, Geneva, sans-serif;
 font-size: 26pt;
 }
 
-.migrationtitle h2{
-	color: #668037;
-	font-family: "FontinSansRegular", Arial, Helvetica, sans-serif;
-	
-}
-
-.hoteltitle h2{
-	color: #668037;
-	font-family: "FontinSansRegular", Arial, Helvetica, sans-serif;
-	
-}
-
-.sampletitle h2{
-	color: #668037;
-	font-family: "FontinSansRegular", Arial, Helvetica, sans-serif;
-}
 
 .sampletext p{
 	font-family:  "FontinSansRegular", Arial, Helvetica, sans-serif;
-	font-size: 14pt;
+	font-size: 13pt;
 
 }
 
 .hoteltext p{
 	font-family:  "FontinSansRegular", Arial, Helvetica, sans-serif;
-	font-size: 14pt;
+	font-size: 13pt;
 
 }
 
 .migration p{
 	font-family:  "FontinSansRegular", Arial, Helvetica, sans-serif;
-	font-size: 14pt;
+	font-size: 13pt;
 }
 
 
 
 
 .pane-content {
-	float:right;
-	padding-bottom: 50px;
+	position:relative;
 }
 
 .pane-views-savannah-views-slideshow-block .pane-content .view-savannah-views-slideshow{
 	position:absolute;
 	float:none;
-	top:-88px;
+	top:-168px;
 	left:-24px;
  }
 
 #savannah-homepage .center-wrapper{
-	padding-top:380px;
+	padding-top:300px;
 }
 
 #main-wrapper {
@@ -547,21 +531,23 @@ font-size: 26pt;
 }
 .migration {
 	border-right: 1px solid #603314;
-    padding-right: 65px;
+    padding-right: 39px;
 }
 
 .Sampleblock
 {
 	border-right: 1px solid #603314;
-	padding-left: 45px;
-    padding-right: 30px;
+	padding-left: 40px;
+    padding-right: 40px;
 
 }
-
+.migrationtitle {
+	margin-top: -6px;
+}
 .hotelblock
 {
-	padding-left: 10px;
-
+    position:relative;
+	left: 40px;
 }
 
 /* --------------- Main Menu ------------ */
@@ -645,7 +631,7 @@ font-size: 26pt;
 
 #savannah-homepage .panel-col-bottom{
 	border-top: 1px solid #603314;
-	padding-top: 20px;
+	padding-top: 13px;
 }
 
 .panel-2col-stacked .panel-col-first {
@@ -772,7 +758,7 @@ pre {
 
 #main {
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 
 /* ----------------- Featured ----------------- */
@@ -782,7 +768,7 @@ pre {
   font-size: 8pt;
   font-weight: normal;
   line-height: 1.4;
-  padding: 20px 0 45px;
+  padding: 6px 0 45px;
   margin: 0;
   background: #fff8e0;
   /*background: rgba(30, 50, 10, 0.08);
@@ -828,11 +814,13 @@ h1#page-title {
 #content h2 {
   color: #61330F;
   font-family: "FontinSansRegular",Verdana,Geneva,sans-serif;
-  margin-bottom: 2px;
+  margin-bottom: 17px;
+  margin-top: 5px;
   font-size: 1.429em;
   line-height: 1.4;
 }
 .node .content {
+	margin-bottom:50px;
   font-size: 1.071em;
 }
 .node-teaser .content {
@@ -1005,8 +993,8 @@ ul.links {
   padding-top: 10px;
 }
 .sidebar .block {
-  border: 1px solid;
-  padding: 15px 20px;
+  border: none;
+  padding: 15px 0px;
   margin: 0 0 20px;
 }
 .sidebar h2 {
@@ -1019,7 +1007,9 @@ ul.links {
 }
 .sidebar .block .content {
   font-size: 0.914em;
+  margin-left: -15px;
   line-height: 1.4;
+  margin-top:-30px;
 }
 .sidebar tbody {
   border: none;
@@ -1033,23 +1023,25 @@ ul.links {
 /* ----------------- Triptych ----------------- */
 
 #triptych-wrapper {
-  background-color: #f0f0f0;
-  background: rgba(30, 50, 10, 0.08);
-  border-top: 1px solid #e7e7e7;
+  border-top: 1px solid #603314;
+  width:912px;
+  margin-left:70px;
+  padding-top: 30px;
 }
 #triptych h2 {
-  color: #000;
-  font-size: 1.714em;
-  margin-bottom: 0.8em;
-  text-shadow: 0 1px 0 #fff;
-  text-align: center;
-  line-height: 1;
+  color: #668037;
+  font-family: "FontinSansRegular",Arial,Helvetica,sans-serif;
+  font-size: 1.429em;
+  line-height: 1.4;
+  margin-bottom: 10px;
 }
 #triptych .block {
-  margin-bottom: 2em;
-  padding-bottom: 2em;
-  border-bottom: 1px solid #dfdfdf;
+  
   line-height: 1.3;
+  float:left;
+  /*margin-top: 30px;
+  margin-bottom: 2em;
+  padding-bottom: 2em;*/
 }
 #triptych .block.last {
   border-bottom: none;
@@ -1489,6 +1481,7 @@ input.form-text,
 textarea.form-textarea,
 select.form-select {
   border: 1px solid #ccc;
+  border-radius: 5px 5px 5px 5px;
 }
 input.form-submit:hover,
 input.form-submit:focus {
@@ -1502,9 +1495,11 @@ input.form-submit:focus {
   margin-top: 2px;
 }
 
-.form-item-search-block-form.form-item,.form-item-search-block-form.form-actions {
+.form-item-search-block-form.form-item,#search-block-form #edit-actions {
   position:absolute;
-  z-index:100;
+  z-index:1000;
+  top:22px;
+  right:109px;
 }
 
 .form-item label {
@@ -1519,7 +1514,9 @@ input.form-submit:focus {
   margin-left: 2px;
 }
 .form-actions {
-  padding-top: 10px;
+   /*bottom: 315px;
+    position: absolute;
+    right: 5px;*/
 }
 /* Contact Form */
 .contact-form #edit-name {
@@ -1718,13 +1715,17 @@ div.vertical-tabs .vertical-tabs-panes fieldset.vertical-tabs-pane {
 #search-block-form input.form-submit,
 #search-form input.form-submit {
   float:right;
-  height: 12px;
+  height: 20px;
   width: 0px;
   cursor: pointer;
-  border-color: #e4e4e4 #d2d2d2 #b4b4b4;
-  background: url(../images/search-button.png);
+  border:none;
+  /*border-color: #e4e4e4 #d2d2d2 #b4b4b4;*/
+  background: url(../images/search-button2.png);
   background-repeat:no-repeat;
   overflow: hidden;
+  margin-right:-6px;
+  margin-top:-13px;
+  
 }
 
 #search-block-form input.form-submit:hover,
@@ -2242,7 +2243,7 @@ ul.nice-menu-down li {
     height: 10px;
     margin-left: 733px;
     width: 169px;
-    margin-top: 4px;
+    margin-top: -10px;
     border-radius:5px;
     -khtml-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -2275,5 +2276,60 @@ ul.nice-menu-down li {
 }
 
 #content .section, .sidebar .section {
-    margin-top: 0px;
+    margin-top: 50px;
+}
+
+#sidebar-second .section {
+    margin-top: 30px;
+}
+
+.panel-2col-stacked .panel-col-top, .panel-2col-stacked .panel-col-bottom
+{
+	clear: both;
+    width: 913px;
+}
+
+/*.migrationtitle h2{
+	color: #668037;
+	font-family: "FontinSansRegular", Arial, Helvetica, sans-serif;
+	
+}
+
+.hoteltitle h2{
+	color: #668037;
+	font-family: "FontinSansRegular", Arial, Helvetica, sans-serif;
+	
+}*/
+
+#savannah-homepage .panel-col-bottom h2{
+	color: #668037;
+	font-family: "FontinSansRegular", Arial, Helvetica, sans-serif;
+}
+.locator {
+	margin-right:10px;
+}
+
+
+/** puts labels and input fields on the same line and aligns them nicely */
+.webform-component-textfield label,
+.webform-component-date label,
+.webform-component-email label,
+.webform-component-file label {
+   float: left;
+   width: 14em;
+}
+/** puts each input option on the same line as its label (see attached image). */
+.webform-component-select .form-item input{ 
+   display: inline;  
+   float: left;
+   margin-left: 20px;
+   margin-right: 5px;
+}
+
+#webform-component-body .form-item webform-componentwebform-component-markup p{
+	margin-top:10px;
+}
+
+.savannahcontent p{
+	margin-top:10px;
 }

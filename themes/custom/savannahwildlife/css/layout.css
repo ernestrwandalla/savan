@@ -61,7 +61,8 @@ body,
   position: relative;
 }
 .one-sidebar #content {
-  width: 720px;
+  margin-top: 15px;
+  width: 613px;
 }
 .two-sidebars #content {
   width: 480px;
@@ -72,7 +73,7 @@ body,
 }
 #sidebar-first,
 #sidebar-second {
-  width: 240px;
+  width: 327px;
 }
 #main-wrapper {
   min-height: 300px;
@@ -90,6 +91,13 @@ body,
   margin: 20px 20px 30px;
   width: 280px;
 }
+
+.region-triptych-middle{
+	width:100%;
+	margin:0;	
+	margin-top: -7px;
+}
+
 #footer-wrapper {
   padding: 35px 5px 30px;
 }
