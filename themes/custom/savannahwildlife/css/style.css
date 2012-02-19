@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'FontinSansRegular';
-    src: url('fonts/fontin_sans_r_45b-webfont.eot');
-    src: url('fonts/fontin_sans_r_45b-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/fontin_sans_r_45b-webfont.woff') format('woff'),
-         url('fonts/fontin_sans_r_45b-webfont.ttf') format('truetype'),
-         url('fonts/fontin_sans_r_45b-webfont.svg#FontinSansRegular') format('svg');
+    src: url('Fonts/fontin_sans_r_45b-webfont.eot');
+    src: url('Fonts/fontin_sans_r_45b-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/fontin_sans_r_45b-webfont.woff') format('woff'),
+         url('Fonts/fontin_sans_r_45b-webfont.ttf') format('truetype'),
+         url('Fonts/fontin_sans_r_45b-webfont.svg#FontinSansRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -12,11 +12,11 @@
 
 @font-face {
     font-family: 'dearJoe4Regular';
-    src: url('fonts/dj4trial-webfont.eot');
-    src: url('fonts/dj4trial-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/dj4trial-webfont.woff') format('woff'),
-         url('fonts/dj4trial-webfont.ttf') format('truetype'),
-         url('fonts/dj4trial-webfont.svg#dearJoe4Regular') format('svg');
+    src: url('Fonts/dj4trial-webfont.eot');
+    src: url('Fonts/dj4trial-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/dj4trial-webfont.woff') format('woff'),
+         url('Fonts/dj4trial-webfont.ttf') format('truetype'),
+         url('Fonts/dj4trial-webfont.svg#dearJoe4Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -2249,11 +2249,14 @@ ul.nice-menu-down li {
   }
 
 #specialist {
-	margin-top: 0px;
+        font-size:8pt;
+	font-weight:bolder;
+        color:white;
+        margin-top: 0px;
 	position:absolute;
 	width:280px;;
 	z-index:100;
-	top:22px;
+	top:24px;
 	right:256px;
 }
 .talk {
@@ -2262,7 +2265,7 @@ ul.nice-menu-down li {
 }
 
 .phone {
-    font-size: 15px;
+    font-size: 10pt;
     margin-top: -3px;
 	position:relative;
 	float:right;
