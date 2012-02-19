@@ -2039,8 +2039,8 @@ ul.nice-menu-down li:hover {
 
 
 ul.nice-menu-down li li {
-  margin-top: 5px;
-  line-height:16px;
+  margin-top: 0px;
+  line-height:21px;
   font-weight:normal;
   font-size:10px;
    -moz-border-top-left-radius: 5px;
@@ -2129,7 +2129,7 @@ ul.nice-menu-down li:hover {
 
 
 ul.nice-menu-down li ul li:hover {
-	margin-top:5px;
+	margin-top:0px;
 	height:29px;
 	font-size:10px;
 	font-weight:bold;
@@ -2234,7 +2234,7 @@ ul.nice-menu-down li {
   ul.nice-menu li.menuparent ul, #header-region ul.nice-menu li.menuparent ul {
       margin-top:10px;
       width:100%;
-      height:31px;
+      height:27px;
 }
 #search-form input#edit-keys, #block-search-form .form-item-search-block-form input {
     color: gray;
